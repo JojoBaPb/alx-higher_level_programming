@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    """Import all fn from calculator_1 and Handle basic arithmetic operations."""
+    """Import all fn frm calculator_1 Handle basic arithmetic ops."""
     from calculator_1 import add, sub, mul, div
     import sys
 
