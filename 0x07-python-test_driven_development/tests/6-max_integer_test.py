@@ -1,7 +1,12 @@
+#!/usr/bin/python3
+"""Unittests for max_integer([..])."""
+
 import unittest
 from max_integer import max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
+    """Define unittests for max_integer([..])."""
 
     def test_empty_list(self):
         self.assertIsNone(max_integer([]))
