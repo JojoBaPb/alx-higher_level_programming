@@ -9,9 +9,9 @@ class Student:
         """Initialize a new Student.
                     
         Args:
-        first_name (str): first name of student.
-        last_name (str): last name of student.
-        age (int): age of student.
+            first_name (str): first name of student.
+            last_name (str): last name of student.
+            age (int): age of student.
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -24,7 +24,7 @@ class Student:
         included in list.
                                                                                                                         
         Args:
-        attrs (list): (Optional) attributes to represent.
+            attrs (list): (Optional) attributes to represent.
         """
         if (type(attrs) == list and
                 all(type(elem) == str for elem in attrs)):
@@ -35,7 +35,7 @@ class Student:
         """Replaces all attr of the Student.
 
         Args:
-        json (dict): The key/value to replace attributes with.
+            json (dict): The key/value to replace attributes with.
         """
         for k, v in json.items():
             setattr(self, k, v)
