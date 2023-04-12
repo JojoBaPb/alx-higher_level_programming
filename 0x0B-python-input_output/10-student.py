@@ -6,12 +6,12 @@ class Student:
     """Represents a student."""
 
     def __init__(self, first_name, last_name, age):
-    """Initialize a new Student.
+        """Initialize a new Student.
     
-    Args:
-        first_name (str): first name of student.
-        last_name (str): last name of student.
-        age (int): age of student.
+        Args:
+            first_name (str): first name of student.
+            last_name (str): last name of student.
+            age (int): age of student.
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -28,5 +28,5 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(elem) == str for elem in attrs)):
-            return {y: getattr(self, y) for y in attrs if hasattr(self, y)}
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
