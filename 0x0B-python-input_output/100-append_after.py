@@ -4,7 +4,7 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """Inserts text after each line with given string in file.
-        
+
     Args:
         filename (str): Name of the file.
         search_string (str): String that searches within the file.
