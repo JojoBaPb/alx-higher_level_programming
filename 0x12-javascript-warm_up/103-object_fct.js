@@ -1,12 +1,12 @@
 #!/usr/bin/node
 let myObject = {
   type: 'object',
-  val: 12
+  value: 12
 };
 console.log(myObject);
 
 myObject.incr = function () {
-  this.val++;
+  this.value++;
 };
 
 myObject.incr();
